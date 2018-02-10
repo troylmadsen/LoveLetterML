@@ -30,7 +30,7 @@ class ClientThread(threading.Thread):
         except Exception as e:
             print(e)
         finally:
-            print('[-] ' self.clientIP + ':' str(self.clientPort) + ' disconnected')
+            print('[-] ' + self.clientIP + ':' + str(self.clientPort) + ' disconnected')
             self.conn.close()
 
 
